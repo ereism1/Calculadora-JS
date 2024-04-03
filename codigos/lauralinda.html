@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang = pt>
+<head>
+
+
+<main></main>
+
+
+
+
+</style>
+</head>
+<body>
+<div class="calculadora">
+<h1>calculator</h1>
+<p id="result"><p>
+
+<table>
+<td <input></input><button class="" onclick="clean()">C</button></td>
+<td><button class="" onclick="back()"><-</button></td>
+<td><button class="" onclick="insert('+')">+</button></td>
+<td><button class="" onclick="insert('*')">*</button></td>
+</tr>
+<tr>
+<td><button class="" onclick="insert('7')">7</button></td>
+<td><button class="" onclick="insert('8')">8</button></td>
+<td><button class="" onclick="insert('9')">9</button></td>
+<td><button class="" onclick="insert('-')">-</button></td>
+</tr>
+<tr>
+<td><button class="" onclick="insert('4')">4</button></td>
+<td><button class="" onclick="insert('5')">5</button></td>
+<td><button class="" onclick="insert('6')">6</button></td>
+<td><button class="" onclick="insert('/')">/</button></td>
+</tr>
+<tr>
+<td><button class="" onclick="insert('1')">1</button></td>
+<td><button class="" onclick="insert('2')">2</button></td>
+<td><button class="" onclick="insert('3')">3</button></td>
+<td rowspan="2"><button id="igual" onclick="calcular()">=</button></td>
+</tr>
+<tr>
+<td colspan="2"><button id="zero" onclick="insert('0')">0</button></td>
+<td><button class="" onclick="insert('.')">.</button></td>
+</tr>
+</table>
+</div>
+<div class="espaço1">
+</div>
+<footer>
+<U>Eduardo Reis<br>Fullstack devloper<br>2024</U>
+</footer>
+<style>
+.espaço1{
+height:330px;
+}
+
+footer{
+font-size:20px;
+position: left-end;
+font-family: arial black;
+}
+
+html,body{
+height:100%;
+max-height:800px;
+max-width:1800px;
+width:100%;
+background-color:rgb(123, 120, 140);
+display:inline-block;
+
+}
+div{
+height:100%;
+max-height:500px;
+min-height:50px;
+}
+
+h1{
+margin:auto;
+text-align:center;
+color:white;
+}
+
+.calculadora{
+border:solid;
+border-radius:5px;
+margin:auto;
+  width:341px;
+  margin-top: 20px;
+  height:100%;
+  background-color:black;
+ 
+}
+
+table{
+  border:solid;
+  border-radius:5px;
+  margin:auto;
+  width:200px;
+  margin-top:-12px;
+  height:100%;
+  background-color:black;
+}
+
+button{
+width:80px;
+height:100%;
+color:Black;
+border:solid black;
+border-radius: 10px;
+cursor: pointer;
+font-size:15px;
+font-family:arial black;
+}
+button:hover{
+background-color:rgb(218, 217, 224);
+}
+#zero{
+width:160px;
+height:100%;
+
+}
+#igual{
+width:80px;
+height:100%;
+
+}
+#result{
+border:solid;
+border-radius: 10px;
+width:325px;
+position:center;
+display:flex;
+margin:auto;
+height:50px;
+justify-content:right;
+background-color:white;
+font-size:20px ;
+
+}
+ 
+#input{
+align-items:center;
+justify-content:center;
+display:flex;
+margin-left:0px;
+
+
+}
+
+</style>
+<script>
+ function insert(num)
+{
+ var numero = document.getElementById("result").innerHTML;
+ document.getElementById("result").innerHTML = numero + num;
+}
+
+ function clean()
+{
+ document.getElementById("result").innerHTML = "";
+}
+ function back()
+{
+ var resultado = document.getElementById("result").innerHTML;
+ document.getElementById("result").innerHTML = resultado.substring(0, resultado.length -1);
+}
+ function calcular()
+{
+ resultado = document.getElementById("result").innerHTML;
+ if(resultado)
+{
+ document.getElementById("result").innerHTML= eval(resultado);
+}
+ else
+{
+  document.getElementById("result").innerHTML= "null";
+}
+}
+
+
+</script
+</body>
+<html>
