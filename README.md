@@ -1,6 +1,7 @@
 # CALCULADORA NUMERICA 
 Olá lhe apresento meu projeto de calculadora numerica, usando HTML, CSS e JS.
 É um projeto clássico e básico, no entanto ao longo dele melhorei muito meu raciocinio lógico e minha atenção.
+Escrito todo em bloco de notas e terminado em pouco menos de três dias, futuramente lançarei updates para torna-lo mais dinâmico e apresentável. 
 
 # UM PROJETO BÁSICO, PORÉM MUITO PRESTATIVO
 
